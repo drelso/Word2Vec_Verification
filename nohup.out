@@ -1,0 +1,938 @@
+Getting vocabulary size from: data/processed_data/vocab_1.csv
+Vocabulary size: 72628
+Loading dataset NumPy file: data/processed_data/skipgram_data_ctx5_lt_v1_train.npy
+Data size: (22863374, 2)
+First row:  [130  24]
+Types: <class 'numpy.int64'> <class 'numpy.int64'>
+Saved file to data/processed_data/skipgram_data_ctx5_lt_v1_train_counts.npy
+CUDA is available, running on GPU
+##### PARAMETERS 
+
+data_file data/processed_data/skipgram_data_ctx5_lt_v1_train.csv
+vocab_file data/processed_data/vocab_1.csv
+syns_file None
+model_name rand_init-no_syns-10e-voc1-emb300
+validation_file data/processed_data/skipgram_data_ctx5_lt_v1_val.csv
+embedding_size 300
+epochs 10
+batch_size 10
+num_neg_samples 5
+learning_rate 0.01
+w2v_init False
+w2v_path None
+emb_npy_file None
+data_augmentation_ratio 0.25
+
+
+
+No synonym file, running unaugmented
+Size of sample table:  100002795
+Total distinct words:  72628
+Samples from vocab:  [['the', '180206', '0.05088860059878244'], ['to', '82530', '0.023305751237014942'], ['and', '81967', '0.02314676495388833'], ['of', '81570', '0.0230346556210264'], ['a', '77341', '0.021840422954343543']]
+Epoch 0 validation
+4030850
+
+********
+Validation loss at epoch 0: 570.22
+(num points: 4030850 )
+
+********
+Loss at epoch 0: 431.23
+(num points: 22863374 )
+(num synonyms: 0 )
+Elapsed time in epoch 0: 14066.682799339294
+Saving checkpoint file: 'model/rand_init-no_syns-10e-voc1-emb300/checkpoints/0-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 0: 78.68
+(num points: 4030850 )
+
+********
+Loss at epoch 1: 62.55
+(num points: 22863374 )
+(num synonyms: 0 )
+Elapsed time in epoch 1: 14635.92946767807
+Saving checkpoint file: 'model/rand_init-no_syns-10e-voc1-emb300/checkpoints/1-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 1: 65.70
+(num points: 4030850 )
+
+********
+Loss at epoch 2: 49.47
+(num points: 22863374 )
+(num synonyms: 0 )
+Elapsed time in epoch 2: 13269.861367225647
+Saving checkpoint file: 'model/rand_init-no_syns-10e-voc1-emb300/checkpoints/2-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 2: 57.93
+(num points: 4030850 )
+
+********
+Loss at epoch 3: 44.33
+(num points: 22863374 )
+(num synonyms: 0 )
+Elapsed time in epoch 3: 13271.540650367737
+Saving checkpoint file: 'model/rand_init-no_syns-10e-voc1-emb300/checkpoints/3-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 3: 56.82
+(num points: 4030850 )
+
+********
+Loss at epoch 4: 41.23
+(num points: 22863374 )
+(num synonyms: 0 )
+Elapsed time in epoch 4: 13266.689249277115
+Saving checkpoint file: 'model/rand_init-no_syns-10e-voc1-emb300/checkpoints/4-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 4: 54.40
+(num points: 4030850 )
+
+********
+Loss at epoch 5: 38.77
+(num points: 22863374 )
+(num synonyms: 0 )
+Elapsed time in epoch 5: 13266.004846096039
+Saving checkpoint file: 'model/rand_init-no_syns-10e-voc1-emb300/checkpoints/5-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 5: 51.60
+(num points: 4030850 )
+
+********
+Loss at epoch 6: 37.71
+(num points: 22863374 )
+(num synonyms: 0 )
+Elapsed time in epoch 6: 13268.590722799301
+Saving checkpoint file: 'model/rand_init-no_syns-10e-voc1-emb300/checkpoints/6-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 6: 51.90
+(num points: 4030850 )
+
+********
+Loss at epoch 7: 36.36
+(num points: 22863374 )
+(num synonyms: 0 )
+Elapsed time in epoch 7: 13267.410326242447
+Saving checkpoint file: 'model/rand_init-no_syns-10e-voc1-emb300/checkpoints/7-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 7: 49.56
+(num points: 4030850 )
+
+********
+Loss at epoch 8: 35.49
+(num points: 22863374 )
+(num synonyms: 0 )
+Elapsed time in epoch 8: 13266.768322229385
+Saving checkpoint file: 'model/rand_init-no_syns-10e-voc1-emb300/checkpoints/8-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 8: 50.20
+(num points: 4030850 )
+
+********
+Loss at epoch 9: 34.84
+(num points: 22863374 )
+(num synonyms: 0 )
+Elapsed time in epoch 9: 13266.808215141296
+Saving checkpoint file: 'model/rand_init-no_syns-10e-voc1-emb300/checkpoints/9-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 9: 50.18
+(num points: 4030850 )
+
+
+Saving model to  model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300.pth
+Train losses:
+[431.2345911373117, 62.55481137576385, 49.47215198671012, 44.32528730627935, 41.230201273815275, 38.77437705664114, 37.7139495114044, 36.36327136364481, 35.48803927220309, 34.83694155022653]
+Validation losses:
+[570.2150766559355, 78.67920354569212, 65.69897816064858, 57.92889517160668, 56.81977547519126, 54.39886871097591, 51.59822853105606, 51.900882800707286, 49.5561768567073, 50.19880903428035, 50.17531542070611]
+Traceback (most recent call last):
+  File "word2vec_verification.py", line 26, in <module>
+    train_augm_w2v(lt_proc_train_data_file, vocab_file, model_name, lt_proc_val_data_file, syns_file=None, embedding_size=300, epochs=10, batch_size=10, num_neg_samples=5, learning_rate=0.01, w2v_init=False, w2v_path=None, emb_npy_file=None, data_augmentation_ratio=.25)
+  File "/home/diegor/Word2Vec_Verification/skipgram/train.py", line 398, in train_augm_w2v
+    with open(losses_file, 'w+', quoting=csv.QUOTE_NONNUMERIC) as l:
+TypeError: 'quoting' is an invalid keyword argument for this function
+
+
+
+#######################################
+FULL SOFTMAX PROCESSES
+#######################################
+
+
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-cross_entropies.npy
+
+Total elapsed time:  387.3690571784973
+
+
+
+################# CALCULATING VAL
+
+Zeros row 15
+[0. 0. 0. ... 0. 0. 0.]
+Number of zeros: 41582
+Saving vector of normalisation terms to data/processed_data/skipgram_data_ctx5_lt_v1_val_counts_norm_vector.npy
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-cross_entropies_val.npy
+Saving histogram to plots/rand_init-no_syns-10e-voc1-emb300rand_init-no_syns-10e-voc1-emb300_val_cross_ents
+
+Total elapsed time:  449.7671101093292
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-cross_entropies_val.npy
+Saving histogram to plots/rand_init-no_syns-10e-voc1-emb300rand_init-no_syns-10e-voc1-emb300_val_cross_ents
+
+Total elapsed time:  368.13667821884155
+Zeros row 15
+[0. 0. 0. ... 0. 0. 0.]
+Number of zeros: 41582
+Saving vector of normalisation terms to data/processed_data/skipgram_data_ctx5_lt_v1_val_counts_norm_vector.npy
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-cross_entropies_val.npy
+Saving histogram to plots/rand_init-no_syns-10e-voc1-emb300rand_init-no_syns-10e-voc1-emb300_val_cross_ents
+
+Total elapsed time:  432.1299047470093
+
+
+#######################################
+LUKE'S CROSS ENTROPY
+#######################################
+
+Calculating Luke's cross entropy for data/processed_data/skipgram_data_ctx5_lt_v1_train.npy
+Num datapoints:  22863374
+Luke's cross entropy: 74.65432782497946
+
+Total elapsed time:  371.5298681259155
+
+
+########## CALCULATE FOR VALIDATION
+
+Calculating Luke's cross entropy for data/processed_data/skipgram_data_ctx5_lt_v1_train.npy
+Num datapoints:  4030850
+Luke's cross entropy: 74.63465858567211
+
+Total elapsed time:  118.73321843147278
+
+
+#######################################
+DATASET CONSTRUCTION CODE REFACTORING
+#######################################
+
+
+# SYNONYM SAMPLING
+
+Processing file 'data/processed_data/skipgram_data_ctx5_train_sampled_1.csv'
+Header:  ['focus_word', 'context_word', 'sent_num', 'focus_index', 'context_position']
+Saving to file 'data/processed_data/skipgram_data_ctx5_lt_v1_train_1.csv'
+
+selections osmonds not in dictionary
+from osmonds not in dictionary
+the osmonds not in dictionary
+osmonds selections not in dictionary
+osmonds from not in dictionary
+osmonds the not in dictionary
+osmonds ' not in dictionary
+osmonds greatest not in dictionary
+osmonds hits not in dictionary
+osmonds or not in dictionary
+' osmonds not in dictionary
+' singalongamax not in dictionary
+greatest osmonds not in dictionary
+hits singalongamax not in dictionary
+or osmonds not in dictionary
+or singalongamax not in dictionary
+singalongamax greatest not in dictionary
+singalongamax hits not in dictionary
+singalongamax or not in dictionary
+
+Processed 14620354 word pairs. Missing 19 pairs (not in vocabulary)
+Processing file 'data/processed_data/skipgram_data_ctx5_val_sampled_1.csv'
+Header:  ['focus_word', 'context_word', 'sent_num', 'focus_index', 'context_position']
+Saving to file 'data/processed_data/skipgram_data_ctx5_lt_v1_val_1.csv'
+Processed 2586333 word pairs. Missing 0 pairs (not in vocabulary)
+Processing file 'data/processed_data/skipgram_data_ctx5_train_syns_1.csv'
+Header:  ['synonym', 'context_word', 'sent_num', 'focus_index', 'context_position', 'focus_word']
+Saving to file 'data/processed_data/skipgram_data_ctx5_lt_v1_train_syns_1.csv'
+
+happy osmonds not in dictionary
+option osmonds not in dictionary
+great osmonds not in dictionary
+great singalongamax not in dictionary
+bang osmonds not in dictionary
+bang singalongamax not in dictionary
+
+Processed 8633114 word pairs. Missing 6 pairs (not in vocabulary)
+
+
+
+#####################################
+TRAINING AUGMENTED W2V
+#####################################
+
+CUDA is available, running on GPU
+##### PARAMETERS 
+
+data_file data/processed_data/skipgram_data_ctx5_lt_v1_train_1.csv
+vocab_file data/processed_data/vocab_1.csv
+syns_file data/processed_data/skipgram_data_ctx5_lt_v1_train_syns_1.csv
+model_name rand_init-syns-10e-voc1-emb300
+validation_file data/processed_data/skipgram_data_ctx5_lt_v1_val_1.csv
+embedding_size 300
+epochs 10
+batch_size 10
+num_neg_samples 5
+learning_rate 0.01
+w2v_init False
+w2v_path None
+emb_npy_file rand_init-syns-10e-voc1-emb300rand_init-syns-10e-voc1-emb300
+data_augmentation_ratio 0.25
+
+
+
+Size of sample table:  100002795
+Total distinct words:  72628
+Samples from vocab:  [['the', '180206', '0.05088860059878244'], ['to', '82530', '0.023305751237014942'], ['and', '81967', '0.02314676495388833'], ['of', '81570', '0.0230346556210264'], ['a', '77341', '0.021840422954343543']]
+Epoch 0 validation
+2586333
+
+********
+Validation loss at epoch 0: 559.43
+(num points: 2586333 )
+Calculating synonym indices. Number of synonyms: 8633114
+Finished calculating. Number of random synonym indices: 25899342
+
+********
+Loss at epoch 0: 454.11
+(num points: 19495223 )
+(num synonyms: 4874869 )
+Elapsed time in epoch 0: 11982.78056049347
+Saving checkpoint file: 'model/rand_init-syns-10e-voc1-emb300/checkpoints/0-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 0: 74.70
+(num points: 2586333 )
+
+********
+Loss at epoch 1: 62.36
+(num points: 19493840 )
+(num synonyms: 4873486 )
+Elapsed time in epoch 1: 11980.932531118393
+Saving checkpoint file: 'model/rand_init-syns-10e-voc1-emb300/checkpoints/1-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 1: 56.27
+(num points: 2586333 )
+
+********
+Loss at epoch 2: 49.61
+(num points: 19489386 )
+(num synonyms: 4869032 )
+Elapsed time in epoch 2: 11987.371171712875
+Saving checkpoint file: 'model/rand_init-syns-10e-voc1-emb300/checkpoints/2-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 2: 52.84
+(num points: 2586333 )
+
+********
+Loss at epoch 3: 44.19
+(num points: 19493776 )
+(num synonyms: 4873422 )
+Elapsed time in epoch 3: 11988.650636672974
+Saving checkpoint file: 'model/rand_init-syns-10e-voc1-emb300/checkpoints/3-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 3: 48.62
+(num points: 2586333 )
+
+********
+Loss at epoch 4: 42.40
+(num points: 19495136 )
+(num synonyms: 4874782 )
+Elapsed time in epoch 4: 11984.289210557938
+Saving checkpoint file: 'model/rand_init-syns-10e-voc1-emb300/checkpoints/4-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 4: 45.30
+(num points: 2586333 )
+
+********
+Loss at epoch 5: 39.83
+(num points: 19496971 )
+(num synonyms: 4876617 )
+Elapsed time in epoch 5: 11989.632184028625
+Saving checkpoint file: 'model/rand_init-syns-10e-voc1-emb300/checkpoints/5-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 5: 47.36
+(num points: 2586333 )
+
+********
+Loss at epoch 6: 38.54
+(num points: 19493220 )
+(num synonyms: 4872866 )
+Elapsed time in epoch 6: 11992.404213666916
+Saving checkpoint file: 'model/rand_init-syns-10e-voc1-emb300/checkpoints/6-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 6: 45.27
+(num points: 2586333 )
+
+********
+Loss at epoch 7: 38.06
+(num points: 19494169 )
+(num synonyms: 4873815 )
+Elapsed time in epoch 7: 11984.473423957825
+Saving checkpoint file: 'model/rand_init-syns-10e-voc1-emb300/checkpoints/7-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 7: 44.22
+(num points: 2586333 )
+
+********
+Loss at epoch 8: 37.11
+(num points: 19494402 )
+(num synonyms: 4874048 )
+Elapsed time in epoch 8: 11988.134756088257
+Saving checkpoint file: 'model/rand_init-syns-10e-voc1-emb300/checkpoints/8-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 8: 41.91
+(num points: 2586333 )
+
+********
+Loss at epoch 9: 36.49
+(num points: 19489289 )
+(num synonyms: 4868935 )
+Elapsed time in epoch 9: 11982.85184621811
+Saving checkpoint file: 'model/rand_init-syns-10e-voc1-emb300/checkpoints/9-epoch-chkpt.tar' 
+
+
+********
+Validation loss at epoch 9: 42.80
+(num points: 2586333 )
+
+
+Saving model to  model/rand_init-syns-10e-voc1-emb300/rand_init-syns-10e-voc1-emb300.pth
+Saved  i_embedding  to  rand_init-syns-10e-voc1-emb300rand_init-syns-10e-voc1-emb300
+Saved  o_embedding  to  rand_init-syns-10e-voc1-emb300rand_init-syns-10e-voc1-emb300
+Train losses:
+[454.10652735852415, 62.35665099634981, 49.60697444008258, 44.192936113006354, 42.39852894119522, 39.82964719304604, 38.53663525764782, 38.05896269238989, 37.10698687787782, 36.48951518399324]
+Validation losses:
+[559.4312545349729, 74.70301081472219, 56.27007506568861, 52.835906882096445, 48.62167597406755, 45.295364636617705, 47.36367064576585, 45.27060009759843, 44.2194649066303, 41.909371037836664, 42.80380082463262]
+Average run time per epoch:  11986.152053451538
+
+Total elapsed time:  122946.34771609306
+
+
+
+#####################################
+DOT PRODS FOR ALL MODELS
+#####################################
+
+
+Processing rand_init-no_syns-10e-voc1-emb300
+CUDA is available, running on GPU
+Shapes: torch.Size([72628, 300]) torch.Size([300, 72628])
+Types torch.FloatTensor torch.FloatTensor
+CUDA? False False
+Calculating dot product
+Saving to  model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-embs_dot_prod.npy
+Dot prods shape (72628, 72628)
+Dot prods dtype float32
+Dot prod:  17.400873
+Pre-calc dot prod 17.400875
+
+Processing rand_init-syns25-10e-voc1-emb300
+CUDA is available, running on GPU
+Shapes: torch.Size([72628, 300]) torch.Size([300, 72628])
+Types torch.FloatTensor torch.FloatTensor
+CUDA? False False
+Calculating dot product
+Saving to  model/rand_init-syns25-10e-voc1-emb300/rand_init-syns25-10e-voc1-emb300-embs_dot_prod.npy
+Dot prods shape (72628, 72628)
+Dot prods dtype float32
+Dot prod:  -1.6889799
+Pre-calc dot prod -1.6889794
+
+Processing rand_init-syns16-10e-voc1-emb300
+CUDA is available, running on GPU
+Shapes: torch.Size([72628, 300]) torch.Size([300, 72628])
+Types torch.FloatTensor torch.FloatTensor
+CUDA? False False
+Calculating dot product
+Saving to  model/rand_init-syns16-10e-voc1-emb300/rand_init-syns16-10e-voc1-emb300-embs_dot_prod.npy
+Dot prods shape (72628, 72628)
+Dot prods dtype float32
+Dot prod:  -1.7730042
+Pre-calc dot prod -1.773004
+
+Processing w2v_init-no_syns-10e-voc1-emb300
+CUDA is available, running on GPU
+Shapes: torch.Size([72628, 300]) torch.Size([300, 72628])
+Types torch.FloatTensor torch.FloatTensor
+CUDA? False False
+Calculating dot product
+Saving to  model/w2v_init-no_syns-10e-voc1-emb300/w2v_init-no_syns-10e-voc1-emb300-embs_dot_prod.npy
+Dot prods shape (72628, 72628)
+Dot prods dtype float32
+Dot prod:  -1.0672836
+Pre-calc dot prod -1.0672839
+
+Processing w2v_init-syns25-10e-voc1-emb300
+CUDA is available, running on GPU
+Shapes: torch.Size([72628, 300]) torch.Size([300, 72628])
+Types torch.FloatTensor torch.FloatTensor
+CUDA? False False
+Calculating dot product
+Saving to  model/w2v_init-syns25-10e-voc1-emb300/w2v_init-syns25-10e-voc1-emb300-embs_dot_prod.npy
+Dot prods shape (72628, 72628)
+Dot prods dtype float32
+Dot prod:  -1.1384342
+Pre-calc dot prod -1.1384342
+
+Processing w2v_init-syns16-10e-voc1-emb300
+CUDA is available, running on GPU
+Shapes: torch.Size([72628, 300]) torch.Size([300, 72628])
+Types torch.FloatTensor torch.FloatTensor
+CUDA? False False
+Calculating dot product
+Saving to  model/w2v_init-syns16-10e-voc1-emb300/w2v_init-syns16-10e-voc1-emb300-embs_dot_prod.npy
+Dot prods shape (72628, 72628)
+Dot prods dtype float32
+Dot prod:  -1.4574442
+Pre-calc dot prod -1.4574445
+
+Total elapsed time:  528.944916009903
+
+
+#####################################
+EXP DOT PRODS FOR ALL MODELS
+#####################################
+
+
+
+Processing rand_init-no_syns-10e-voc1-emb300
+Exp dtype: float64
+Saving exponentiated dot products to: model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-embs_exp_dot_prod.npy
+Deleting previous (non-exponentiated) file:  model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-embs_dot_prod.npy
+Dot prods shape (72628, 72628)
+Dot prods dtype float64
+Exp dot prod:  36066433.983156964
+Pre-calc dot prod 36066502.77448612
+
+Processing rand_init-syns25-10e-voc1-emb300
+Exp dtype: float64
+Saving exponentiated dot products to: model/rand_init-syns25-10e-voc1-emb300/rand_init-syns25-10e-voc1-emb300-embs_exp_dot_prod.npy
+Deleting previous (non-exponentiated) file:  model/rand_init-syns25-10e-voc1-emb300/rand_init-syns25-10e-voc1-emb300-embs_dot_prod.npy
+Dot prods shape (72628, 72628)
+Dot prods dtype float64
+Exp dot prod:  0.18470785502517476
+Pre-calc dot prod 0.18470794310076447
+
+Processing rand_init-syns16-10e-voc1-emb300
+Exp dtype: float64
+Saving exponentiated dot products to: model/rand_init-syns16-10e-voc1-emb300/rand_init-syns16-10e-voc1-emb300-embs_exp_dot_prod.npy
+Deleting previous (non-exponentiated) file:  model/rand_init-syns16-10e-voc1-emb300/rand_init-syns16-10e-voc1-emb300-embs_dot_prod.npy
+Dot prods shape (72628, 72628)
+Dot prods dtype float64
+Exp dot prod:  0.16982204671327578
+Pre-calc dot prod 0.16982206695764254
+
+Processing w2v_init-no_syns-10e-voc1-emb300
+Exp dtype: float64
+Saving exponentiated dot products to: model/w2v_init-no_syns-10e-voc1-emb300/w2v_init-no_syns-10e-voc1-emb300-embs_exp_dot_prod.npy
+Deleting previous (non-exponentiated) file:  model/w2v_init-no_syns-10e-voc1-emb300/w2v_init-no_syns-10e-voc1-emb300-embs_dot_prod.npy
+Dot prods shape (72628, 72628)
+Dot prods dtype float64
+Exp dot prod:  0.34394152195678057
+Pre-calc dot prod 0.3439414399547414
+
+Processing w2v_init-syns25-10e-voc1-emb300
+Exp dtype: float64
+Saving exponentiated dot products to: model/w2v_init-syns25-10e-voc1-emb300/w2v_init-syns25-10e-voc1-emb300-embs_exp_dot_prod.npy
+Deleting previous (non-exponentiated) file:  model/w2v_init-syns25-10e-voc1-emb300/w2v_init-syns25-10e-voc1-emb300-embs_dot_prod.npy
+Dot prods shape (72628, 72628)
+Dot prods dtype float64
+Exp dot prod:  0.3203201957728036
+Pre-calc dot prod 0.3203201957728036
+
+Processing w2v_init-syns16-10e-voc1-emb300
+Exp dtype: float64
+Saving exponentiated dot products to: model/w2v_init-syns16-10e-voc1-emb300/w2v_init-syns16-10e-voc1-emb300-embs_exp_dot_prod.npy
+Deleting previous (non-exponentiated) file:  model/w2v_init-syns16-10e-voc1-emb300/w2v_init-syns16-10e-voc1-emb300-embs_dot_prod.npy
+Dot prods shape (72628, 72628)
+Dot prods dtype float64
+Exp dot prod:  0.2328305854445477
+Pre-calc dot prod 0.23283050217785659
+
+Total elapsed time:  19124.026629924774
+
+Processing rand_init-no_syns-10e-voc1-emb300
+CUDA is available, running on GPU
+Shapes: torch.Size([72628, 300]) torch.Size([300, 72628])
+Types torch.FloatTensor torch.FloatTensor
+CUDA? False False
+Calculating dot product
+Saving to  model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-embs_dot_prod.npy
+Dot prods shape (72628, 72628)
+Dot prods dtype float32
+Dot prod:  -4.255921
+Pre-calc dot prod -4.2559204
+Exp dtype: float64
+Saving exponentiated dot products to: model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-embs_exp_dot_prod.npy
+Deleting previous (non-exponentiated) file:  model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-embs_dot_prod.npy
+Dot prods shape (72628, 72628)
+Dot prods dtype float64
+Exp dot prod:  3.911302211323919e-08
+Pre-calc dot prod 3.9113096715479584e-08
+Max exp dot prod: 1.2706471989390565e+48
+
+Total elapsed time:  2307.1144964694977
+
+
+
+#####################################
+NORM VECTORS FOR ALL MODELS
+#####################################
+
+
+Processing prev_rand_init-no_syns-10e-voc1-emb300
+Calculating row sums for model/prev_rand_init-no_syns-10e-voc1-emb300/prev_rand_init-no_syns-10e-voc1-emb300-embs_exp_dot_prod.npy
+Saving normalisation vector model/prev_rand_init-no_syns-10e-voc1-emb300/prev_rand_init-no_syns-10e-voc1-emb300-norm_vector.npy
+
+Processing rand_init-no_syns-10e-voc1-emb300
+Calculating row sums for model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-embs_exp_dot_prod.npy
+Saving normalisation vector model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-norm_vector.npy
+
+
+Processing rand_init-syns25-10e-voc1-emb300
+Calculating row sums for model/rand_init-syns25-10e-voc1-emb300/rand_init-syns25-10e-voc1-emb300-embs_exp_dot_prod.npy
+Saving normalisation vector model/rand_init-syns25-10e-voc1-emb300/rand_init-syns25-10e-voc1-emb300-norm_vector.npy
+
+Processing rand_init-syns16-10e-voc1-emb300
+Calculating row sums for model/rand_init-syns16-10e-voc1-emb300/rand_init-syns16-10e-voc1-emb300-embs_exp_dot_prod.npy
+Saving normalisation vector model/rand_init-syns16-10e-voc1-emb300/rand_init-syns16-10e-voc1-emb300-norm_vector.npy
+
+Processing w2v_init-no_syns-10e-voc1-emb300
+Calculating row sums for model/w2v_init-no_syns-10e-voc1-emb300/w2v_init-no_syns-10e-voc1-emb300-embs_exp_dot_prod.npy
+Saving normalisation vector model/w2v_init-no_syns-10e-voc1-emb300/w2v_init-no_syns-10e-voc1-emb300-norm_vector.npy
+
+Processing w2v_init-syns25-10e-voc1-emb300
+Calculating row sums for model/w2v_init-syns25-10e-voc1-emb300/w2v_init-syns25-10e-voc1-emb300-embs_exp_dot_prod.npy
+Saving normalisation vector model/w2v_init-syns25-10e-voc1-emb300/w2v_init-syns25-10e-voc1-emb300-norm_vector.npy
+
+Processing w2v_init-syns16-10e-voc1-emb300
+Calculating row sums for model/w2v_init-syns16-10e-voc1-emb300/w2v_init-syns16-10e-voc1-emb300-embs_exp_dot_prod.npy
+Saving normalisation vector model/w2v_init-syns16-10e-voc1-emb300/w2v_init-syns16-10e-voc1-emb300-norm_vector.npy
+
+Total elapsed time:  416.7001283168793
+
+
+#####################################
+NORM EXP DOT PRODS FOR ALL MODELS
+#####################################
+
+
+
+Processing rand_init-no_syns-10e-voc1-emb300
+Calculating normalised dot products
+Saving normalised dot products to model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-embs_norm_exp_dot_prod.npy
+[ -9993.01462088  -8745.40192341 -10096.96139562 ...  -7343.34570006
+  -4541.0581277   -4576.33417449]
+Sum of difference -182390722945.34045
+Sum of calculated norm dot prods row: 182390722946.3404
+Sum of norm dot prods row: 1.0
+Deleting previous (non-normalised) file:  model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-embs_exp_dot_prod.npy
+
+Processing rand_init-syns25-10e-voc1-emb300
+Calculating normalised dot products
+Saving normalised dot products to model/rand_init-syns25-10e-voc1-emb300/rand_init-syns25-10e-voc1-emb300-embs_norm_exp_dot_prod.npy
+[-10178.93160498 -11130.73040661  -7221.37093368 ...  -3820.44539083
+  -3814.91749983  -3828.98332681]
+Sum of difference -881779855415.5231
+Sum of calculated norm dot prods row: 881779855416.5232
+Sum of norm dot prods row: 1.0
+Deleting previous (non-normalised) file:  model/rand_init-syns25-10e-voc1-emb300/rand_init-syns25-10e-voc1-emb300-embs_exp_dot_prod.npy
+
+Processing rand_init-syns16-10e-voc1-emb300
+Calculating normalised dot products
+Saving normalised dot products to model/rand_init-syns16-10e-voc1-emb300/rand_init-syns16-10e-voc1-emb300-embs_norm_exp_dot_prod.npy
+[-9566.11543522 -8387.17803874 -8856.94354118 ... -4216.77042169
+ -4085.28558655 -4025.38577671]
+Sum of difference -323927299.3526652
+Sum of calculated norm dot prods row: 323927300.3526652
+Sum of norm dot prods row: 1.0
+Deleting previous (non-normalised) file:  model/rand_init-syns16-10e-voc1-emb300/rand_init-syns16-10e-voc1-emb300-embs_exp_dot_prod.npy
+
+Processing w2v_init-no_syns-10e-voc1-emb300
+Calculating normalised dot products
+Saving normalised dot products to model/w2v_init-no_syns-10e-voc1-emb300/w2v_init-no_syns-10e-voc1-emb300-embs_norm_exp_dot_prod.npy
+[-24521.4978409  -12178.02153978 -10767.29232473 ...  -7260.26279299
+ -10631.251361    -6249.75805403]
+Sum of difference -777792042203.4353
+Sum of calculated norm dot prods row: 777792042204.4352
+Sum of norm dot prods row: 0.9999999999999999
+Deleting previous (non-normalised) file:  model/w2v_init-no_syns-10e-voc1-emb300/w2v_init-no_syns-10e-voc1-emb300-embs_exp_dot_prod.npy
+
+Processing w2v_init-syns25-10e-voc1-emb300
+Calculating normalised dot products
+Saving normalised dot products to model/w2v_init-syns25-10e-voc1-emb300/w2v_init-syns25-10e-voc1-emb300-embs_norm_exp_dot_prod.npy
+[-20169.57103447 -13321.347833    -9983.47926158 ... -42600.5818711
+  -5361.55511522  -7093.83106447]
+Sum of difference -9839371842.795492
+Sum of calculated norm dot prods row: 9839371843.795494
+Sum of norm dot prods row: 0.9999999999999998
+Deleting previous (non-normalised) file:  model/w2v_init-syns25-10e-voc1-emb300/w2v_init-syns25-10e-voc1-emb300-embs_exp_dot_prod.npy
+
+Processing w2v_init-syns16-10e-voc1-emb300
+Calculating normalised dot products
+Saving normalised dot products to model/w2v_init-syns16-10e-voc1-emb300/w2v_init-syns16-10e-voc1-emb300-embs_norm_exp_dot_prod.npy
+[-15565.19947331  -9178.43860102  -9422.5505222  ... -14640.43525891
+  -5091.14244622  -6368.30944099]
+Sum of difference -407323377.46211034
+Sum of calculated norm dot prods row: 407323378.46211034
+Sum of norm dot prods row: 0.9999999999999996
+Deleting previous (non-normalised) file:  model/w2v_init-syns16-10e-voc1-emb300/w2v_init-syns16-10e-voc1-emb300-embs_exp_dot_prod.npy
+
+Total elapsed time:  22231.596575737
+
+
+###################################
+CALCULATING CROSS ENTROPIES
+###################################
+
+
+Processing prev_rand_init-no_syns-10e-voc1-emb300
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/prev_rand_init-no_syns-10e-voc1-emb300/prev_rand_init-no_syns-10e-voc1-emb300-cross_entropies_train.npy
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/prev_rand_init-no_syns-10e-voc1-emb300/prev_rand_init-no_syns-10e-voc1-emb300-cross_entropies_val.npy
+Average train cross validation 74.94454254320598
+Average val cross validation 74.89287068515866
+Num datapoints:  22863374
+Num datapoints:  4030850
+Luke's cross entropy train: 74.65432782497946
+Luke's cross entropy val: 74.63465858567211
+
+Processing rand_init-no_syns-10e-voc1-emb300
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-cross_entropies_train.npy
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-cross_entropies_val.npy
+Average train cross validation 54.69706608034328
+Average val cross validation 46.54419799442848
+Num datapoints:  22863374
+Num datapoints:  4030850
+Luke's cross entropy train: 14.65759399825312
+Luke's cross entropy val: 14.666007697661037
+
+Processing rand_init-syns25-10e-voc1-emb300
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/rand_init-syns25-10e-voc1-emb300/rand_init-syns25-10e-voc1-emb300-cross_entropies_train.npy
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/rand_init-syns25-10e-voc1-emb300/rand_init-syns25-10e-voc1-emb300-cross_entropies_val.npy
+Average train cross validation 52.59264468682036
+Average val cross validation 43.8998402970655
+Num datapoints:  22863374
+Num datapoints:  4030850
+Luke's cross entropy train: 14.025199998645318
+Luke's cross entropy val: 14.03124966763025
+
+Processing rand_init-syns16-10e-voc1-emb300
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/rand_init-syns16-10e-voc1-emb300/rand_init-syns16-10e-voc1-emb300-cross_entropies_train.npy
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/rand_init-syns16-10e-voc1-emb300/rand_init-syns16-10e-voc1-emb300-cross_entropies_val.npy
+Average train cross validation 53.286789280222976
+Average val cross validation 44.7500315933909
+Num datapoints:  22863374
+Num datapoints:  4030850
+Luke's cross entropy train: 14.203970001074397
+Luke's cross entropy val: 14.210707985214231
+
+Processing w2v_init-no_syns-10e-voc1-emb300
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/w2v_init-no_syns-10e-voc1-emb300/w2v_init-no_syns-10e-voc1-emb300-cross_entropies_train.npy
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/w2v_init-no_syns-10e-voc1-emb300/w2v_init-no_syns-10e-voc1-emb300-cross_entropies_val.npy
+Average train cross validation 11.01689478963398
+Average val cross validation 10.745818605885031
+Num datapoints:  22863374
+Num datapoints:  4030850
+Luke's cross entropy train: 10.039809724538635
+Luke's cross entropy val: 10.04536373192392
+
+Processing w2v_init-syns25-10e-voc1-emb300
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/w2v_init-syns25-10e-voc1-emb300/w2v_init-syns25-10e-voc1-emb300-cross_entropies_train.npy
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/w2v_init-syns25-10e-voc1-emb300/w2v_init-syns25-10e-voc1-emb300-cross_entropies_val.npy
+Average train cross validation 10.774013530565172
+Average val cross validation 10.535202071610934
+Num datapoints:  22863374
+Num datapoints:  4030850
+Luke's cross entropy train: 9.943559820067957
+Luke's cross entropy val: 9.949070725145903
+
+Processing w2v_init-syns16-10e-voc1-emb300
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/w2v_init-syns16-10e-voc1-emb300/w2v_init-syns16-10e-voc1-emb300-cross_entropies_train.npy
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/w2v_init-syns16-10e-voc1-emb300/w2v_init-syns16-10e-voc1-emb300-cross_entropies_val.npy
+Average train cross validation 10.831713560358832
+Average val cross validation 10.58622054446671
+Num datapoints:  22863374
+Num datapoints:  4030850
+Luke's cross entropy train: 9.972454939394776
+Luke's cross entropy val: 9.977424295801772
+
+Total elapsed time:  10322.711540937424
+
+
+
+############################################
+RECALCULATING CROSS ENTS FOR RANDOMISED DATA
+############################################
+
+
+Getting vocabulary size from: data/vocabulary/vocab_1.csv
+Vocabulary size: 72628
+Loading dataset NumPy file: data/processed_data/skipgram_data_ctx5_lt_v1_train_1.npy
+Data size: (14620354, 2)
+First row:  [106   6]
+Types: <class 'numpy.int64'> <class 'numpy.int64'>
+Saved file to data/counts/skipgram_data_ctx5_lt_v1_train_counts_1.npy
+Getting vocabulary size from: data/vocabulary/vocab_1.csv
+Vocabulary size: 72628
+Loading dataset NumPy file: data/processed_data/skipgram_data_ctx5_lt_v1_val_1.npy
+Data size: (2586333, 2)
+First row:  [20397     2]
+Types: <class 'numpy.int64'> <class 'numpy.int64'>
+Saved file to data/counts/skipgram_data_ctx5_lt_v1_val_counts_1.npy
+Zeros row 15
+[0. 0. 0. ... 0. 0. 0.]
+Number of zeros: 4877
+Saving vector of normalisation terms to data/counts/skipgram_data_ctx5_lt_v1_train_counts_norm_vector_1.npy
+Zeros row 15
+[0. 0. 0. ... 0. 0. 0.]
+Number of zeros: 41731
+Saving vector of normalisation terms to data/counts/skipgram_data_ctx5_lt_v1_val_counts_norm_vector_1.npy
+
+Processing prev_rand_init-no_syns-10e-voc1-emb300
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/prev_rand_init-no_syns-10e-voc1-emb300/prev_rand_init-no_syns-10e-voc1-emb300-cross_entropies_train.npy
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/prev_rand_init-no_syns-10e-voc1-emb300/prev_rand_init-no_syns-10e-voc1-emb300-cross_entropies_val.npy
+Average train cross validation 74.94198084673344
+Average val cross validation 74.94678006052582
+Calculating Luke's cross entropy for data/processed_data/skipgram_data_ctx5_lt_v1_train_1.npy
+Num datapoints:  14620354
+Num datapoints:  2586333
+Luke's cross entropy train: 74.71874109486863
+Luke's cross entropy val: 74.70907989481259
+
+Processing rand_init-no_syns-10e-voc1-emb300
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-cross_entropies_train.npy
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/rand_init-no_syns-10e-voc1-emb300/rand_init-no_syns-10e-voc1-emb300-cross_entropies_val.npy
+Average train cross validation 52.781737659179534
+Average val cross validation 49.32476135585123
+Calculating Luke's cross entropy for data/processed_data/skipgram_data_ctx5_lt_v1_train_1.npy
+Num datapoints:  14620354
+Num datapoints:  2586333
+Luke's cross entropy train: 14.16049659620784
+Luke's cross entropy val: 14.93975798253459
+
+Processing rand_init-syns25-10e-voc1-emb300
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/rand_init-syns25-10e-voc1-emb300/rand_init-syns25-10e-voc1-emb300-cross_entropies_train.npy
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/rand_init-syns25-10e-voc1-emb300/rand_init-syns25-10e-voc1-emb300-cross_entropies_val.npy
+Average train cross validation 50.76687020036223
+Average val cross validation 46.51465451541711
+Calculating Luke's cross entropy for data/processed_data/skipgram_data_ctx5_lt_v1_train_1.npy
+Num datapoints:  14620354
+Num datapoints:  2586333
+Luke's cross entropy train: 13.590003771825126
+Luke's cross entropy val: 14.272211591957248
+
+Processing rand_init-syns16-10e-voc1-emb300
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/rand_init-syns16-10e-voc1-emb300/rand_init-syns16-10e-voc1-emb300-cross_entropies_train.npy
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/rand_init-syns16-10e-voc1-emb300/rand_init-syns16-10e-voc1-emb300-cross_entropies_val.npy
+Average train cross validation 51.44301036769974
+Average val cross validation 47.419518861455714
+Calculating Luke's cross entropy for data/processed_data/skipgram_data_ctx5_lt_v1_train_1.npy
+Num datapoints:  14620354
+Num datapoints:  2586333
+Luke's cross entropy train: 13.750905597096367
+Luke's cross entropy val: 14.462920664945585
+
+Processing w2v_init-no_syns-10e-voc1-emb300
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/w2v_init-no_syns-10e-voc1-emb300/w2v_init-no_syns-10e-voc1-emb300-cross_entropies_train.npy
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/w2v_init-no_syns-10e-voc1-emb300/w2v_init-no_syns-10e-voc1-emb300-cross_entropies_val.npy
+Average train cross validation 9.96535770063377
+Average val cross validation 11.792471839892723
+Calculating Luke's cross entropy for data/processed_data/skipgram_data_ctx5_lt_v1_train_1.npy
+Num datapoints:  14620354
+Num datapoints:  2586333
+Luke's cross entropy train: 9.757913167093257
+Luke's cross entropy val: 10.153110798157284
+
+Processing w2v_init-syns25-10e-voc1-emb300
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/w2v_init-syns25-10e-voc1-emb300/w2v_init-syns25-10e-voc1-emb300-cross_entropies_train.npy
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/w2v_init-syns25-10e-voc1-emb300/w2v_init-syns25-10e-voc1-emb300-cross_entropies_val.npy
+Average train cross validation 9.813373473157869
+Average val cross validation 11.496642478216575
+Calculating Luke's cross entropy for data/processed_data/skipgram_data_ctx5_lt_v1_train_1.npy
+Num datapoints:  14620354
+Num datapoints:  2586333
+Luke's cross entropy train: 9.697973026373026
+Luke's cross entropy val: 10.044340840659197
+
+Processing w2v_init-syns16-10e-voc1-emb300
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/w2v_init-syns16-10e-voc1-emb300/w2v_init-syns16-10e-voc1-emb300-cross_entropies_train.npy
+Shapes match, calculating cross entropies
+Saving cross entropy scores to model/w2v_init-syns16-10e-voc1-emb300/w2v_init-syns16-10e-voc1-emb300-cross_entropies_val.npy
+Average train cross validation 9.83696699132447
+Average val cross validation 11.576965495561547
+Calculating Luke's cross entropy for data/processed_data/skipgram_data_ctx5_lt_v1_train_1.npy
+Num datapoints:  14620354
+Num datapoints:  2586333
+Luke's cross entropy train: 9.716221085193377
+Luke's cross entropy val: 10.07639009922334
+
+Total elapsed time:  11988.421149015427
